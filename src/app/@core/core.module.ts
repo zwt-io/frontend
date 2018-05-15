@@ -31,7 +31,7 @@ const NB_CORE_PROVIDERS = [
 
   ...NbAuthModule.forRoot({
     providers: {
-
+//以下部分到时候要接入登录验证的功能
       email: {
         service: NbEmailPassAuthProvider,
         config: {
