@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { NgxEchartsModule } from 'ngx-echarts';
+// import { NgxEchartsModule } from 'ngx-echarts';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { ChartModule } from 'angular2-chartjs';
 
@@ -49,7 +49,8 @@ const components = [
 ];
 
 @NgModule({
-  imports: [ThemeModule, ChartsRoutingModule, NgxEchartsModule, NgxChartsModule, ChartModule],
+  // imports: [ThemeModule, ChartsRoutingModule, NgxEchartsModule, NgxChartsModule, ChartModule],
+  imports: [ThemeModule, ChartsRoutingModule, NgxChartsModule, ChartModule],
   declarations: [...routedComponents, ...components],
 })
 export class ChartsModule {}
