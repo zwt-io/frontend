@@ -1,7 +1,7 @@
 <nb-card size="large">
   <nb-tabset fullWidth>
 
-    <nb-tab tabTitle="Temperature">
+    <nb-tab tabTitle="温度">
 
       <div class="slider-container">
         <ngx-temperature-dragger [(value)]="temperature" (power)="temperatureOff = !$event"
@@ -12,9 +12,7 @@
             <div class="value temperature">
               {{ temperatureOff ? '--' : (temperature | ngxRound) }}
             </div>
-            <div class="desc">
-              Celsius
-            </div>
+
           </div>
         </ngx-temperature-dragger>
       </div>
@@ -36,7 +34,7 @@
       </div>
     </nb-tab>
 
-    <nb-tab tabTitle="Humidity">
+    <nb-tab tabTitle="湿度">
 
       <div class="slider-container">
         <ngx-temperature-dragger [(value)]="humidity" (power)="humidityOff = !$event"

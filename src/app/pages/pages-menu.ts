@@ -120,7 +120,7 @@ export const MENU_ITEMS: NbMenuItem[] = [
     icon: 'nb-snowy-circled',
     children: [
       {
-        title: '温度智能感应控制（恒温）',
+        title: '温度智能感应控制',
         link: '/pages/tables/smart-table',
       },
     ],

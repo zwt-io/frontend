@@ -14,9 +14,9 @@ import { NbThemeService } from '@nebular/theme';
 })
 export class D3PieComponent implements OnDestroy {
   results = [
-    { name: 'Germany', value: 8940 },
-    { name: 'USA', value: 5000 },
-    { name: 'France', value: 7200 },
+    { name: '德国', value: 8940 },
+    { name: '美国', value: 5000 },
+    { name: '法国', value: 7200 },
   ];
   showLegend = true;
   showLabels = true;

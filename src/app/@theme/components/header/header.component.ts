@@ -1,10 +1,12 @@
-import { Component, Input, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
-import { NbMenuService, NbSidebarService } from '@nebular/theme';
-import { UserService } from '../../../@core/data/users.service';
-import { AnalyticsService } from '../../../@core/utils/analytics.service';
-//Add authService here
-import { NbAuthJWTToken, NbAuthService } from '@nebular/auth';
+import {NbMenuService, NbSidebarService} from '@nebular/theme';
+import {UserService} from '../../../@core/data/users.service';
+import {AnalyticsService} from '../../../@core/utils/analytics.service';
+
+// Authentication
+
+import {NbAuthJWTToken, NbAuthService} from '@nebular/auth';
 
 
 @Component({
@@ -19,7 +21,7 @@ export class HeaderComponent implements OnInit {
 
   user: any;
 
-  userMenu = [{ title: 'Profile' }, { title: 'Log out' }];
+  userMenu = [{title: 'Profile'}, {title: 'Log out'}];
 
   constructor(private sidebarService: NbSidebarService,
               private menuService: NbMenuService,
@@ -29,16 +31,16 @@ export class HeaderComponent implements OnInit {
   }
 
   ngOnInit() {
-    // this.userService.getUsers()
-    //   .subscribe((users: any) => this.user = users.nick);
-    this.authService.onTokenChange()
-      .subscribe((token: NbAuthJWTToken) => {
-        
-        if(token.isValid()) {
-          this.user = token.getPayload();
-        }
-      } 
-    );
+    this.userService.getUsers()
+      .subscribe((users: any) => this.user = users.nick);
+    // this.authService.onTokenChange()
+    //   .subscribe((token: NbAuthJWTToken) => {
+    //
+    //       if (token.isValid()) {
+    //         this.user = token.getPayload();
+    //       }
+    //     }
+    //   );
   }
 
   toggleSidebar(): boolean {

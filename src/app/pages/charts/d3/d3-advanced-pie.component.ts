@@ -13,15 +13,15 @@ import { NbThemeService } from '@nebular/theme';
 export class D3AdvancedPieComponent implements OnDestroy {
   single = [
     {
-      name: 'Germany',
+      name: '德国',
       value: 8940000,
     },
     {
-      name: 'USA',
+      name: '美国',
       value: 5000000,
     },
     {
-      name: 'France',
+      name: '法国',
       value: 7200000,
     },
   ];
