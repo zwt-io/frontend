@@ -1,7 +1,7 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
-    "name": "ngx-admin-demo"
+    "name": "smarthome-admin-frontend"
   },
   "apps": [
     {
@@ -41,8 +41,6 @@
         "../node_modules/tinymce/plugins/link/plugin.min.js",
         "../node_modules/tinymce/plugins/paste/plugin.min.js",
         "../node_modules/tinymce/plugins/table/plugin.min.js",
-        "../node_modules/echarts/dist/echarts.min.js",
-        "../node_modules/echarts/dist/extension/bmap.min.js",
         "../node_modules/chart.js/dist/Chart.min.js"
       ],
       "environmentSource": "environments/environment.ts",
