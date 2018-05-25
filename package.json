@@ -15,6 +15,7 @@
     "start": "ng serve",
     "build": "ng build",
     "build:prod": "npm run build -- --prod --aot",
+    "build:repo": "npm run build:prod && xcopy /S /E /Y dist repo",
     "test": "ng test -sr",
     "test:coverage": "rimraf coverage && npm run test -- -cc",
     "lint": "ng lint --type-check",
